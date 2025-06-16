@@ -10,9 +10,9 @@ The workshop is divided into two modules. `Module 1` is focused on building the 
 # Goals for this workshop
 | Goal                                                                 | KPI Description                                                 | Target             |
 |----------------------------------------------------------------------|------------------------------------------------------------------|-------------------------------|
-| Understand biological ML problems                                    | Summarize one real-world problem per day                         | Daily (min 5 entries)                      |
-| Identify suitable algorithms/methodologies                          | Choose and justify one method per use case discussed             | Daily  (min 5 entries)                      |
-| Develop intuition for framing questions                             | Write one “problem-to-solution” reflection each day              | Daily   (min 5 entries)                     |
+| Understand biological ML problems                                    | Summarize one real-world problem per day                         |  5 entries                      |
+| Identify suitable algorithms/methodologies                          | Choose and justify one method per use case discussed             | 5 entries                  |
+| Develop intuition for framing questions                             | Write one “problem-to-solution” reflection each day              | 5 entries                    |
 | Write daily recap blogs                                              | Publish or draft a blog entry for each day of the workshop       | 7 entries in total (1/day)    |
-| Network with instructors/participants                               | Initiate conversation with at least 1 person per session         | ≥1 new contact per session    |
+| Network with instructors                              | Initiate conversation with at least 1 person per session         | ≥1 new contact per session    |
 
