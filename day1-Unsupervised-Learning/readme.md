@@ -1,6 +1,6 @@
 ## **Day 1 Reflection – [2 June 2025]**
 
-### **1. Key Problem Discussed**
+### **1. Key Ideas and Problems Discussed**
 
 
 ### **2. Algorithm/Method Applied**
@@ -12,8 +12,5 @@ How was the problem framed and how did the ML method solve it?
 ### **4. Personal Takeaways**
 What did I learn?
 
-### **5. Networking Moment**
-Who did I connect with today? Any good insights?
 
-### **6. Blog Snippet or Draft Title**
 
