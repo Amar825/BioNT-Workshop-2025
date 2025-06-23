@@ -54,3 +54,9 @@ Overfitting happens when your model becomes too good at remembering the training
 To fix this, we use regularization. It is a technique that adds a penalty to the loss function for using overly complex models. This encourages the model to be simpler and more general. 
 
 There are a few types of regularization. Ridge penalizes large weights by squaring them. Lasso penalizes weights by their absolute values, which can even set some to zero, effectively removing unnecessary features. Elastic Net combines both. Each method gives you a way to control complexity and help the model focus on what really matters.
+
+### Hands-on Session (Milan De Cauwer and Pubudu)
+You can check out the notebook `2.Notebook_Logistic_regression.ipynb`. It is well documented, anyone can follow along easily.
+
+I am not going to discuss this particular notebook in this readme, as I have documented it in my assignment for this workshop that you can find in the main repo itself `assignment_2panad.ipynb`.
+
