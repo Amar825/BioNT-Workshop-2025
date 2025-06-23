@@ -42,14 +42,12 @@ Autoencoders are a type of neural network that learns to compress data into a sm
 UMAP is like a mix of the best parts of t-SNE and PCA. It preserves both local neighborhoods and global structure better than t-SNE, and it is faster too. You can use it to visualize how samples are related to each other in a way that feels natural. It is great for spotting patterns or groups in your data, especially when you do not know what to expect.
 
 ### Hands-on  sessions (Katarzyna Michałowska and Pubudu)
-### **2. Algorithm/Method Applied**
-Which method was discussed and why was it suitable?
-
-### **3. “Problem-to-Solution” Thought Process**
+### **Problem-to-Solution” Thought Process**
 How was the problem framed and how did the ML method solve it?
 
-### **4. Personal Takeaways**
-What did I learn?
+### **Algorithm/Method Applied**
+Which method was discussed and why was it suitable?
+
 
 
 
