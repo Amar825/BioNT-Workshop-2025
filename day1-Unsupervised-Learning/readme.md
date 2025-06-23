@@ -46,9 +46,18 @@ We are not going to discuss the nitty gritty of the hands on session here. You c
 
 What we are going to discuss here is the approach taken to solve the particular problem and why it makes sense and take a high level view of the whole thing. 
 
-### **Problem-to-Solution” Thought Process**
-How was the problem framed and how did the ML method solve it?
+### The Problem
+We were given a dataset that contained information on 25 patients and how they responded to 50 different drug compounds. Each patient had a measurement for every drug, which told us how sensitive they were to that particular compound.
 
+At first glance, this might look like a straightforward dataset, but it actually presents a classic case of what is known as high dimensional data. In other words, there are more features or measurements per patient than there are actual patients. This creates several challenges when it comes to analysis.
+
+The first issue is about visualization. We are used to thinking in two or three dimensions because that is what we can easily plot and interpret. But once we have 50 features, we can no longer picture the relationships in our heads or on a simple chart. So if we want to find patterns in how different patients respond to the drugs, we need to somehow reduce that complexity.
+
+The second challenge is more subtle. In high dimensional spaces, the idea of distance becomes less reliable. Normally, we might use distance between points to say how similar or different two patients are. But in this case, because everything is spread out across so many dimensions, the nearest and farthest points start to feel equally far away. That makes methods like clustering or nearest neighbor searches much less meaningful.
+
+Another important concern is overfitting. When a dataset has more features than examples, there is a higher risk that a model might fit the noise rather than the signal. It can pick up patterns that are not actually meaningful, which leads to poor generalization when the model is tested on new data.
+
+So our goal in this case was to simplify the dataset while still keeping the important information. We needed to find a way to reduce the number of features in a smart way, so that we could better explore how patients responded to the drugs, look for similarities, and potentially discover useful biological insights.
 ### **Algorithm/Method Applied**
 Which method was discussed and why was it suitable?
 
