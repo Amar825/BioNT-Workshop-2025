@@ -8,7 +8,13 @@ The materials used by the instructors are in the repo folder itself. In this sec
 `Learning by observation` that is to learn patterns among the data is the nutshell of unsupervised learning. 
 
   #### Multivariate similarity:
-Let's talk about multivariate similarity. Just like the name sounds, it is a metric that assesses similarity between multivariate data (data with multiple features per sample). That could be patients with 1000s of gene expression data for example.  And all these features are dimensions in space, and our patients become a point in this multidimensional space. Our naive human brain cannot comprehend these large-dimensional spaces, but computers can. Later we will talk about the curse of dimensions and the methods developed to shrink it down so our rational intelligence can intrpret it meaningfully. 
+Let's talk about multivariate similarity. As the name suggests, it is about measuring how similar different samples are when each sample has more than one feature. For example, imagine you have patients, and for each patient, you have thousands of gene expression values. Each of those features becomes a separate dimension in space, and each patient becomes a point in that high-dimensional space.
+
+The goal is to measure how close or far apart those points are. If two patients have similar gene expression patterns, they will be closer together. If they are very different, they will be farther apart. To calculate this, we use distance metrics. One common method is Euclidean distance, which is the straight-line distance you learned in geometry. It calculates how far two points are based on their feature values. Another method is correlation distance, which focuses not on the absolute values but on the pattern or trend across features. If two samples increase and decrease in similar ways across features, even with different values, they may still be highly correlated.
+
+Scaling the features is very important here. If one feature has a much larger numerical range than the others, it can dominate the distance calculation. Scaling ensures that each feature contributes equally to the result.
+
+We cannot visualize spaces with hundreds or thousands of dimensions. Our naive brains are not built for that. But computers can handle this high-dimensional data. Later we will look at how to reduce these dimensions in a way that keeps the important structure intact so that we can interpret the data meaningfully.
 
 
 #### Elbow Method
