@@ -51,6 +51,6 @@ Sometimes, your problem may call for a custom metric that reflects real-world im
 #### The problem of model overfitting and Regularisation as a fix
 Overfitting happens when your model becomes too good at remembering the training data. It picks up not just the real patterns but also the noise. As a result, it performs well on known data but fails on new data.
 
-To fix this, we use regularization. It is a technique that adds a penalty to the loss function for using overly complex models. This encourages the model to be simpler and more general. Think of it like telling the model, “Try to be accurate, but don’t get too fancy.”
+To fix this, we use regularization. It is a technique that adds a penalty to the loss function for using overly complex models. This encourages the model to be simpler and more general. 
 
 There are a few types of regularization. Ridge penalizes large weights by squaring them. Lasso penalizes weights by their absolute values, which can even set some to zero, effectively removing unnecessary features. Elastic Net combines both. Each method gives you a way to control complexity and help the model focus on what really matters.
