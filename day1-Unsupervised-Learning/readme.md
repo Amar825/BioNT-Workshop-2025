@@ -85,3 +85,18 @@ By looking at which features had the highest loadings, we got a sense of what ea
 
 This whole process of dimensionality reduction and interpretation made it easier to see structure in the data, reduced noise, and set us up for better downstream analysis.
 
+#### K-means Cluster Analysis
+Once we reduced our dataset into a smaller number of meaningful dimensions using PCA, the next step was to uncover hidden structure within that data. This is where clustering comes in, and we started with one of the most popular methods: K-means clustering.
+
+At its core, K-means tries to group samples such that each one is as close as possible to the "center" of its assigned cluster. That center is just the average of all points in the cluster. The algorithm works by guessing where those centers should be, checking how far each point is from those centers, moving the centers based on where the points ended up, and repeating this until everything stabilizes.
+
+To figure out how good our clustering is, we used two metrics. The first is inertia, which just measures how tightly packed each cluster is. Lower inertia is better, but it always goes down if we keep adding more clusters. That is why we use something called the elbow method, where we look for the point where adding more clusters stops helping much. 
+
+The second metric is the silhouette score, which tells us not only how close each point is to its own cluster but also how far it is from other clusters. A high score means the clusters are well separated and the points are nicely grouped.
+We tried several values of K and plotted both metrics. Based on where the silhouette score peaked and where the inertia curve leveled off, we chose K = 3 as the optimal number of clusters.
+
+After that, we fit the K-means model using this optimal K and assigned each patient to one of the three clusters. We then looked at the cluster centers in PCA space to see what made each group distinct. Cluster 0, for example, had high values on the first principal component, while Cluster 2 had very low values. This suggests the traits captured by that component play a key role in separating the groups.
+
+Finally, we visualized the clusters using the first two principal components and labeled each patient. This made it easier to spot patterns and also gave us some insight into how distinct or overlapping the clusters really are.
+
+In short, K-means helped us take a high-dimensional dataset, simplify it with PCA, and then reveal patient subgroups that might respond differently to drugs or have other biological similarities worth investigating.
