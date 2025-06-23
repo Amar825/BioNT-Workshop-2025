@@ -27,10 +27,19 @@ This is a way of clustering that builds a tree of clusters. At first, we treat e
 Unlike methods that assume clusters are round or evenly sized, DBSCAN is based on how dense the data is in a region. If a point has a lot of neighbors around it, it belongs to a cluster. If it is in a sparse region, it gets labeled as noise. This is useful when clusters are oddly shaped or when you want to find outliers. It does not need you to say how many clusters to look for, which is nice when that number is not obvious.
 
 #### Dimensionality reduction
+When we work with data that has many features, such as thousands of genes or pixels, it becomes difficult to visualize and even harder to understand. Not all features are equally important, and some might even repeat similar information. Dimensionality reduction helps by reducing the number of features while keeping the most important parts of the data. You can think of it as shrinking a large and complicated dataset into a simpler version that still holds the main message. This not only makes it easier to visualize but also helps models perform better by removing unnecessary noise. Here, I am going to simply describe some techniques of dimensionality reduction without going into too much detail or maths. But I'll keep these topics to write more detailed articles as I find them super interesting. 
 ##### PCA
+PCA is like finding the best angle to look at your data from. It rotates your data into a new set of axes called principal components, which are just combinations of your original features. The first one captures the most variation, the second one captures the next most, and so on. You can then keep just the top few components and ignore the rest. It is fast, linear, and great for getting a rough sense of structure.
+
 ##### t-SNE
+t-SNE is more about preserving relationships between individual points than summarizing global structure. It is especially good at showing how points form clusters. If two data points are similar, t-SNE makes sure they end up close together in 2D or 3D. It is perfect for visualizing high-dimensional data but not great for downstream analysis because the axes don’t mean anything. You just look at the patterns.
+
 ##### Auto-encoders
+Autoencoders are a type of neural network that learns to compress data into a smaller hidden version of itself, and then reconstruct it back again. If it can recreate the input well using only this hidden smaller version, that smaller version must be capturing the most important features. Autoencoders are powerful because they can learn complex, non-linear patterns that simple methods like PCA can miss.
+
+
 ##### U-map
+UMAP is like a mix of the best parts of t-SNE and PCA. It preserves both local neighborhoods and global structure better than t-SNE, and it is faster too. You can use it to visualize how samples are related to each other in a way that feels natural. It is great for spotting patterns or groups in your data, especially when you do not know what to expect.
 
 ### Hands-on  sessions (Katarzyna Michałowska and Pubudu)
 ### **2. Algorithm/Method Applied**
