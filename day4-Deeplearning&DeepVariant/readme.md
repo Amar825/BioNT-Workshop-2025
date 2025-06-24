@@ -40,6 +40,16 @@ I personally find the idea behind Deepvariant extremely fascinating, like the us
 I will not discuss the hands-on session from Elias; instead, I shall upload the notebooks themselves, where I've played around with hyperparameters and are well commented and documented. I shall talk briefly about why Deepvariant triumps over existing common variant calling tools.
 
 #### The Problem
+Traditional variant callers like HaplotypeCaller, FreeBayes, or SAMtools use a chain of statistical models and manual rules to figure out where variants are. They rely on assumptions about how sequencing works, like how often errors happen or how reads align. These tools are clever, but they also get stuck when reality doesn’t match their assumptions.
+
+The truth is, sequencing data is noisy. Reads might be low quality, wrongly aligned, or just messy. And hand-tuned statistical models often struggle in these conditions, especially with complex regions of the genome or less common variant types like indels. That leads to two problems: either the model misses real variants, or it calls things that aren’t there. You’re stuck choosing between precision and recall, and tuning for each case can get annoying.
+
+#### The Solution
+DeepVariant takes a different route. Instead of using fixed rules, it uses deep learning to learn what real variants look like. It turns aligned reads into image-like tensors called pileups. These get passed through a convolutional neural network trained to recognize patterns that indicate actual genetic variation.
+
+Because it is trained on huge amounts of high-quality reference data, it learns how to deal with sequencing noise, weird edge cases, and platform differences. No manual rule-writing needed. And the output is standard VCF files, so it fits easily into existing workflows.
+
+What makes it powerful is not just accuracy, but generalization. It does well across different genome builds, sequencing platforms, and variant types. Plus, it runs fast on GPUs using Parabricks, so it is practical for real-world use.
 
 
 
