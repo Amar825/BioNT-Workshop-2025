@@ -32,3 +32,14 @@ This is the engine that makes deep learning possible. Backpropagation lets you c
 
 You run a forward pass to get predictions and loss. Then in the backward pass, you compute gradients by moving backward through the network. Each layer hands off its gradient to the one before it. This lets the optimizer adjust every parameter correctly.
 
+### Hands-on session on Deep Learning and DeepVariant(Elias Myklebust and Pubudu)
+There were two separate hands-on sessions. Elias focused on showing us an actual skeleton of the neural networks and playing around with the hyperparameters, whereas Pubudu's hands-on session was focused on using DeepVariant: a Deep-Learning Tool inside a Virtual Machine using NVIDIA GPUs, finally entering the realm of accelerated genomics.
+
+I personally find the idea behind Deepvariant extremely fascinating, like the use of BAM files to produce pileup image tensors and use a Convolutional Neural Network to produce standard VCF files. We were also introduced to AlphaMissense, which predicts pathogenicity based on variants. Both these topics deserve an article of their own for my own sense of comprehension.
+
+I will not discuss the hands-on session from Elias; instead, I shall upload the notebooks themselves, where I've played around with hyperparameters and are well commented and documented. I shall talk briefly about why Deepvariant triumps over existing common variant calling tools.
+
+#### The Problem
+
+
+
