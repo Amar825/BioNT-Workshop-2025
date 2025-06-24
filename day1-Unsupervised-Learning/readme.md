@@ -64,12 +64,12 @@ Autoencoders are a type of neural network that learns to compress data into a sm
 ###### U-map
 UMAP is like a mix of the best parts of t-SNE and PCA. It preserves both local neighborhoods and global structure better than t-SNE, and it is faster too. You can use it to visualize how samples are related to each other in a way that feels natural. It is great for spotting patterns or groups in your data, especially when you do not know what to expect.
 
-### Hands-on  sessions (Katarzyna Michałowska and Pubudu)
+### Hands-on Sessions (Katarzyna Michałowska and Pubudu)
 We are not going to discuss the nitty gritty of the hands on session here. You can check out the notebook `1.Notebook_PCA_n_Clustering_session.ipynb`. It is well documented, anyone can follow along easily. 
 
 What we are going to discuss here is the approach taken to solve the particular problem and why it makes sense and take a high level view of the whole thing. 
 
-### The Problem
+#### The Problem
 We were given a dataset that contained information on 25 patients and how they responded to 50 different drug compounds. Each patient had a measurement for every drug, which told us how sensitive they were to that particular compound.
 
 At first glance, this might look like a straightforward dataset, but it actually presents a classic case of what is known as high dimensional data. In other words, there are more features or measurements per patient than there are actual patients. This creates several challenges when it comes to analysis.
@@ -81,18 +81,18 @@ The second challenge is more subtle. In high dimensional spaces, the idea of dis
 Another important concern is overfitting. When a dataset has more features than examples, there is a higher risk that a model might fit the noise rather than the signal. It can pick up patterns that are not actually meaningful, which leads to poor generalization when the model is tested on new data.
 
 So our goal in this case was to simplify the dataset while still keeping the important information. We needed to find a way to reduce the number of features in a smart way, so that we could better explore how patients responded to the drugs, look for similarities, and potentially discover useful biological insights.
-### The Solution
-#### Data prepararion
+#### The Solution
+##### Data prepararion
 Before we begin applying transformation to the data, we need to make sure the data is clean and consistent. That means checking for any missing values, separating the actual drug sensitivity features from metadata like patient IDs, and looking for outliers or odd patterns. Since the values come from different drugs and may have different ranges, we also scale the data so that everything is on the same playing field. This is especially important because later steps, like PCA, are very sensitive to differences in scale. The idea is to give every feature a fair chance to contribute.
 
-#### PCA implementation
+##### PCA implementation
 Once the data was cleaned and scaled, the next step was to make sense of its complexity. PCA, or Principal Component Analysis, was the method used here. The idea behind PCA is to take the original features and find new ones that summarize most of the important variation in the data, but with fewer dimensions.
 
 The algorithm first figures out which directions in the data carry the most variation. These directions are called principal components. The data is then projected onto them, giving us a new set of features that are uncorrelated with each other. This helps remove redundancy and makes patterns easier to spot.
 
 Since we had only 25 patients, PCA could extract at most 25 components. We looked at how much variance each component explained and picked the top ones that captured most of the information. This way, we could shrink the data while keeping the key structure intact.
 
-##### How Many Components to Keep?
+###### How Many Components to Keep?
 Once PCA gives us all the components, the next question is how many of them we should actually keep. We used a few strategies to answer that.
 
 First, we looked at how much variance each component explains. This tells us how much information from the original data is being captured. By adding up the variance from the top components, we can see how much of the overall structure we’re preserving. For example, the first few components might already capture more than 90 percent of the total variance, which is often good enough.
@@ -101,7 +101,7 @@ One method is to use a variance threshold. Here, we simply choose enough compone
 
 We also used a built-in PCA option that automatically picks the smallest number of components that meet a chosen variance target. This is a simple way to make the choice more systematic and reproducible.
 
-##### What Do These Components Mean?
+###### What Do These Components Mean?
 To make sense of the new components, we examined the feature loadings. These are the weights that tell us how much each original feature contributes to each principal component. A high loading (positive or negative) means that feature strongly influences that component.
 
 By looking at which features had the highest loadings, we got a sense of what each component was capturing. For example, if a component was driven mostly by a few specific drugs, we could interpret it as a pattern related to those compounds’ effects. This helps connect the reduced data back to the biology or experimental context it came from.
