@@ -10,7 +10,7 @@ We start with shallow networks, which just means one hidden layer between the in
 #### Activating Functions
 This part is I think one of the most important building blocks. An activation function is what allows the network to stop being just a stack of linear equations. Rectified Linear Unit (ReLU) is the most common choice. It’s simple: if the input is positive, keep it. If not, set it to zero. That small trick makes learning efficient and keeps gradients stable.
 
-But ReLU isn’t the only choice. Sigmoid and tanh were common in earlier models. Sigmoid squashes values between 0 and 1, which is great for binary classification but not so great for gradient flow. Tanh is similar but centered around zero, which can help in some cases. Then there are more exotic ones like leaky ReLU or GELU, but the main idea is the same: squash the input to allow the network to learn more complex, non-linear patterns.
+But ReLU isn’t the only choice. Sigmoid and tanh were common in earlier models. Sigmoid squashes values between 0 and 1, which is great for binary classification but not so great for gradient flow. Gradient flow just means how well the learning signal moves backward through the network. When gradients flow properly, each layer knows how much it needs to adjust to improve the final output. But if gradients vanish or explode, some layers get no useful feedback, and training either stalls or becomes unstable. Tanh is similar but centered around zero, which can help in some cases. Then there are more exotic ones like leaky ReLU or GELU, but the main idea is the same, squash the input to allow the network to learn more complex, non-linear patterns.
 
 #### Loss Functions and Max Likelihood
 Loss functions are how the model learns. They measure how wrong the prediction is and guide the network to adjust itself accordingly. In binary classification, the most commonly used loss is cross-entropy. But where does it come from?
@@ -27,7 +27,6 @@ Instead of feeding the whole dataset into the model at once, we divide it into b
 
 One full loop over the dataset is called an epoch. You usually train for multiple epochs, adjusting weights along the way. At the end of each epoch, you check how the model is doing on a validation set. If performance improves, great. If not, maybe you are overfitting or your learning rate is off.
 
-To be safe, we save checkpoints as we go. That way, if the model starts to go off track, you can roll back to a good version.
 #### Backpropagation
 This is the engine that makes deep learning possible. Backpropagation lets you compute the gradient of the loss with respect to every weight in the network, efficiently. It applies the chain rule from calculus to trace how each weight influenced the final prediction.
 
