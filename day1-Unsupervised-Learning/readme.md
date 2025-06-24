@@ -1,3 +1,26 @@
+## Table of Contents
+
+- [Day 1 Reflection – 2 June 2025](#day-1-reflection--2-june-2025)
+  - [Theory Sessions (Katarzyna Michałowska)](#theory-sessions-katarzyna-michałowska)
+    - [1. Key Ideas and Problems Discussed](#1-key-ideas-and-problems-discussed)
+      - [Unsupervised Learning 101](#unsupervised-learning-101)
+        - [Multivariate Similarity](#multivariate-similarity)
+        - [Elbow Method](#elbow-method)
+        - [Hierarchical Clustering](#hierarchical-clustering)
+        - [DBSCAN: Density-Based Clustering](#dbscan-density-based-clustering)
+        - [Dimensionality Reduction](#dimensionality-reduction)
+          - [PCA](#pca)
+          - [t-SNE](#t-sne)
+          - [Auto-encoders](#auto-encoders)
+          - [UMAP](#umap)
+  - [Hands-on Sessions (Katarzyna Michałowska and Pubudu)](#hands-on-sessions-katarzyna-michałowska-and-pubudu)
+    - [The Problem](#the-problem)
+    - [The Solution](#the-solution)
+      - [Data Preparation](#data-preparation)
+      - [PCA Implementation](#pca-implementation)
+        - [How Many Components to Keep?](#how-many-components-to-keep)
+        - [What Do These Components Mean?](#what-do-these-components-mean)
+      - [K-means Cluster Analysis](#k-means-cluster-analysis)
 ## **Day 1 Reflection – [2 June 2025]**
 
 ### Theory sessions (Katarzyna Michałowska)
