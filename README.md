@@ -108,7 +108,6 @@ This workshop was organized by  **BioNT** and hosted at the **University of Oslo
 
 Special shoutout to all the teaching assistants and organizers who made sure we had working environments, clean data, and functional GPUs.
 
-This reflection project would not have been possible without the amazing instructors, clear teaching materials, and supportive workshop environment.
 ---
 
 **Author:**  
