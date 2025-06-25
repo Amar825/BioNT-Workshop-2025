@@ -23,7 +23,8 @@ docker run \
 -v /data:/data \  # mount /data directory (so container can see it)
 -v $PWD:$PWD \    # mount current working directory
 -w $PWD \ # set working directory inside container to where you are now
-nvcr.io/nvidia/clara/clara-parabricks:4.3.0-1 bash # run the NVIDIA Parabricks container and drop into bash```
+nvcr.io/nvidia/clara/clara-parabricks:4.3.0-1 bash # run the NVIDIA Parabricks container and drop into bash
+```
 
 
 Let's untangle some Parabricks run-scripts:
