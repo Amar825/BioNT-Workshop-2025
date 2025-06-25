@@ -15,10 +15,11 @@ A container image is like a self-contained box that holds everything you need to
 ### Hands-on session
 ```
 docker run \
--it \
---rm \
---gpus all \
--v /data:/data \
--v $PWD:$PWD \
--w $PWD \
-nvcr.io/nvidia/clara/clara-parabricks:4.3.0-1 bash```
+-it \    # keep it interactive (get a terminal)
+--rm \    # remove container after exit (no leftovers)
+--gpus all \  # give container access to all GPUs
+-v /data:/data \  # mount /data directory (so container can see it)
+-v $PWD:$PWD \    # mount current working directory
+-w $PWD \ # set working directory inside container to where you are now
+nvcr.io/nvidia/clara/clara-parabricks:4.3.0-1 bash # run the NVIDIA Parabricks container and drop into bash```
+
