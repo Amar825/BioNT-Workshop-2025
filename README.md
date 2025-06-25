@@ -88,7 +88,7 @@ Includes:
 All workshop notebooks and datasets are inside the corresponding day folders. You can explore:
 
 - Clean and reproducible Jupyter notebooks
-- Personal markdown notes breaking down complex theory
+- Personal markdown notes 
 
 Some other relevant links:
 - [Workshop Hands-on rendered page](https://naicno.github.io/BioNT_Module2_handson/#)
