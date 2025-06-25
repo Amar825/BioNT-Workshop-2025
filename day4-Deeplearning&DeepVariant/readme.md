@@ -38,6 +38,7 @@ There were two separate hands-on sessions. Elias focused on showing us an actual
 I personally find the idea behind Deepvariant extremely fascinating, like the use of BAM files to produce pileup image tensors and use a Convolutional Neural Network to produce standard VCF files. We were also introduced to AlphaMissense, which predicts pathogenicity based on variants. Both these topics deserve an article of their own for my own sense of comprehension.
 
 I will not discuss the hands-on session from Elias; instead, I shall upload the notebooks themselves, where I've played around with hyperparameters and are well commented and documented. I shall talk briefly about why Deepvariant triumps over existing common variant calling tools.
+[Link to the DeepVariant Hands-on session](https://naicno.github.io/BioNT_Module2_handson/4.DeepVariant/#)
 
 #### The Problem
 Traditional variant callers like HaplotypeCaller, FreeBayes, or SAMtools use a chain of statistical models and manual rules to figure out where variants are. They rely on assumptions about how sequencing works, like how often errors happen or how reads align. These tools are clever, but they also get stuck when reality doesn’t match their assumptions.
