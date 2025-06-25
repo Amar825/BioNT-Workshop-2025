@@ -1,4 +1,16 @@
 ## **Day 3 Reflection – [4 June 2025]**
+## Table of Contents
+
+- [Theory Session – Model Optimisation and Validation (Katarzyna Michałowska, SINTEF Digital)](#theory-session--model-optimisation-and-validation-katarzyna-michałowska-sintef-digital)
+  - [Key Ideas Discussed](#key-ideas-discussed)
+    - [Overfitting](#overfitting)
+    - [Bias Variance Trade-off](#bias-variance-trade-off)
+    - [Data Splitting](#data-splitting)
+    - [Data Leakage](#data-leakage)
+    - [Hyperparameter Tuning](#hyperparameter-tuning)
+    - [Evaluation](#evaluation)
+    - [Model Robustness](#model-robustness)
+
 
 ### Theory session- Model Optimisation and Validation (Katarzyna Michałowska, SINTEF digital)
 ### **1. Key Ideas Discussed**
