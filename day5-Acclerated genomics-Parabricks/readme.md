@@ -13,7 +13,8 @@ The workflow looks familiar: first, you do read mapping and alignment refinement
 A container image is like a self-contained box that holds everything you need to run a piece of software. That includes the application itself, its libraries, and all system dependencies. The only thing it uses from your machine is the Linux kernel. This is super helpful in bioinformatics, where some tools are notoriously tricky to set up. With containers, you don’t have to install anything manually or worry about weird compatibility issues. You just pull the image and run it. It saves time and frustration, and makes your analysis reproducible whether you're running it on your laptop, a university cluster, or the cloud.
 
 ### Hands-on session
-```docker run \
+```
+docker run \
 -it \
 --rm \
 --gpus all \
