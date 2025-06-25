@@ -3,7 +3,7 @@
 This was 5-day-long intensive workshop instructed by top professionals in their fields and organised by BioNT (Bio Network for Training). 
 
 
-Welcome to my personal reflections, notes, and code from the BioNT Workshop on **Applied Machine Learning for Biological Data**, held from **2–6 June 2025**.
+This repository is the collection of my reflections, notes, and code from the BioNT Workshop on **Applied Machine Learning for Biological Data**, held from **2–6 June 2025**.
 
 This repository contains well-documented hands-on notebooks, my write-ups on core ML and bioinformatics concepts discussed throughout the sessions, and a deep dive into the applications of machine learning in genomics, clustering, classification, deep learning, and accelerated variant calling using NVIDIA GPUs.
 
