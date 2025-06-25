@@ -1,8 +1,7 @@
-# BioNT-Applied Machine Learning for Biological Data Workshop-2025
+# BioNT-Applied Machine Learning for Biological Data Workshop Reflection and Notebooks-2025
 [Details about the workshop](https://www.cecam.org/workshop-details/applied-machine-learning-for-biological-data-1459)
 This was 5-day-long intensive workshop instructed by top professionals in their fields and organised by BioNT (Bio Network for Training). 
 
-# BioNT Applied Machine Learning for Biological Data – Workshop Reflection and Notebooks
 
 Welcome to my personal reflections, notes, and code from the BioNT Workshop on **Applied Machine Learning for Biological Data**, held from **2–6 June 2025**.
 
