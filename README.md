@@ -98,7 +98,7 @@ Some other relevant links:
 ---
 
 **Author:**  
-Amar Khatri  
+Amar Khatri   
 [LinkedIn](https://www.linkedin.com/in/amarkhatri)
 
 ---
