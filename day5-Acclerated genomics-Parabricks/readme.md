@@ -29,8 +29,10 @@ nvcr.io/nvidia/clara/clara-parabricks:4.3.0-1 bash # run the NVIDIA Parabricks c
 
 Let's untangle some Parabricks run-scripts:
 
+This script is taking raw FASTQ reads and turning them into a cleaned-up BAM file that’s ready for variant calling. That includes mapping the reads to a reference genome, marking duplicates, and applying base quality score recalibration (BQSR). All of this is happening on a GPU
+
 FASTQ to BAM:
-`#!/bin/bash
+```#!/bin/bash
 
 FASTA="/data/ngs/ref/Homo_sapiens_assembly38.fasta"
 KNOWN_SITES="/data/ngs/ref/Homo_sapiens_assembly38.known_indels.vcf.gz"
@@ -38,7 +40,7 @@ KNOWN_SITES="/data/ngs/ref/Homo_sapiens_assembly38.known_indels.vcf.gz"
 READ1="/data/ngs/fastq/dw_sample_R1.fastq.gz"
 READ2="/data/ngs/fastq/dw_sample_R2.fastq.gz"
 
-pbrun fq2bam \
+pbrun fq2bam \ # This is the main Parabricks command — runs a pipeline from FASTQ to BAM
 --ref ${FASTA} \
 --in-fq ${READ1} ${READ2} \
 --num-gpus 1 \
@@ -46,5 +48,7 @@ pbrun fq2bam \
 --out-bam pbrun_fq2bam_GPU.bam \
 --out-recal-file pbrun_recal_gpu.txt \
 --logfile fq2bam.log \
---tmp-dir .`
+--tmp-dir .
+```
+
 
