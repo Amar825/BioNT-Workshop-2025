@@ -94,7 +94,7 @@ All workshop notebooks and datasets are inside the corresponding day folders. Yo
 ---
 
 **Author:**  
-Aman Khatri  
+Amar Khatri  
 [LinkedIn](https://www.linkedin.com/in/amarkhatri)
 
 ---
