@@ -1,4 +1,18 @@
 ## **Day 4 Reflection – [5 June 2025]**
+## Table of Contents
+
+- [Theory Session – Deep Learning (Elias Myklebust, Simula Research Laboratory)](#theory-session--deep-learning-elias-myklebust-simula-research-laboratory)
+  - [Key Ideas Discussed](#key-ideas-discussed)
+    - [Deep Learning – A Branch of Machine Learning](#deep-learning--a-branch-of-machine-learning)
+    - [Shallow Neural Networks](#shallow-neural-networks)
+    - [Activating Functions](#activating-functions)
+    - [Loss Functions and Max Likelihood](#loss-functions-and-max-likelihood)
+    - [Training with Gradient Descent](#training-with-gradient-descent)
+    - [Batches, Epochs, and Monitoring](#batches-epochs-and-monitoring)
+    - [Backpropagation](#backpropagation)
+- [Hands-on Session on Deep Learning and DeepVariant (Elias Myklebust and Pubudu)](#hands-on-session-on-deep-learning-and-deepvariant-elias-myklebust-and-pubudu)
+  - [The Problem](#the-problem)
+  - [The Solution](#the-solution)
 
 ### Theory session- Deep Learning (Elias Myklebust, Simula Research Laboratory)
 ### **1. Key Ideas Discussed**
