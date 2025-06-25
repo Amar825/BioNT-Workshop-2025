@@ -1,5 +1,24 @@
 ## **Day 2 Reflection – [3 June 2025]**
+## Table of Contents
 
+- [Theory Sessions (Milan De Cauwer)](#theory-sessions-milan-de-cauwer)
+  - [1. Key Ideas and Problems Discussed – Classification](#1-key-ideas-and-problems-discussed--classification)
+    - [When Do Linear Classifiers Work Well?](#when-do-linear-classifiers-work-well)
+    - [Logistic Regression and Its Loss Function](#logistic-regression-and-its-loss-function)
+    - [Decision Trees](#decision-trees)
+    - [Random Forest](#random-forest)
+    - [Evaluation Metrics](#evaluation-metrics)
+  - [2. Key Ideas and Problems Discussed – Regression](#2-key-ideas-and-problems-discussed--regression)
+    - [How Does Linear Regression Work?](#how-does-linear-regression-work)
+    - [From Linear to Nonlinear Models](#from-linear-to-nonlinear-models)
+    - [Minimizing the Loss Function](#minimizing-the-loss-function)
+    - [Gradient Descent Optimization](#gradient-descent-optimization)
+    - [What Model Should I Choose?](#what-model-should-i-choose)
+    - [How to Evaluate a Regressor](#how-to-evaluate-a-regressor)
+    - [Overfitting and Regularization](#overfitting-and-regularization)
+- [Hands-on Session (Milan De Cauwer and Pubudu)](#hands-on-session-milan-de-cauwer-and-pubudu)
+
+---
 ### Theory sessions (Milan De Cauwer)
 ### **1. Key Ideas and Problems Discussed/ Classification**
 The materials used by the instructors are in the repo folder itself. In this section, I am going to list out some important concepts that were introduced and we will take a slight deeper dive in some topics i find challenging and write my own understanding of it.
