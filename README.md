@@ -61,7 +61,7 @@ Covered fundamentals of neural networks:
 
 ---
 
-## Day 5 – [Accelerated Genomics with Parabricks](./day5-Acclerated genomics-Parabricks/readme.md)
+## Day 5 – [Accelerated Genomics with Parabricks](./day5-Acclerated-genomics-Parabricks/readme.md)
 
 Worked with:
 - Containers and NVIDIA GPUs
