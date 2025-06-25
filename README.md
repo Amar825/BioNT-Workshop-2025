@@ -18,6 +18,7 @@ This repository contains well-documented hands-on notebooks, my write-ups on cor
 - [Day 5 – Accelerated Genomics with Parabricks](#day-5--accelerated-genomics-with-parabricks)
 - [Assignment Notebook](#assignment)
 - [Resources and Notebooks](#resources-and-notebooks)
+- [Acknowledgment](#acknowledgment)
 
 ---
 
@@ -96,12 +97,25 @@ Some other relevant links:
 - [GPU and parallel processing rendered page](https://training.pages.sigma2.no/tutorials/gpu-intro/index.html)
 - [Workshop interaction page where participants aksed the questions and instructors answerd](https://biont.biobyte.de/VPI_52LLQCmp_P4QYFhFXg?view)
 ---
+## Acknowledgment
+This workshop was organized by  **BioNT** and hosted at the **University of Oslo (UiO)**. Huge thanks to:
+
+- **Katarzyna Michałowska**, SINTEF Norway  
+- **Milan De Cauwer**, SINTEF Norway  
+- **Elias Myklebust**, Simula Research Laboratory  
+- **Pubudu Saneth Samarakoon**, University of Oslo
+- **Sabry Razick**, University of Oslo
+
+Special shoutout to all the teaching assistants and organizers who made sure we had working environments, clean data, and functional GPUs.
+
+This reflection project would not have been possible without the amazing instructors, clear teaching materials, and supportive workshop environment.
+---
 
 **Author:**  
 Amar Khatri   
-[LinkedIn](https://www.linkedin.com/in/amarkhatri)
+If you want to get in touch or discuss anything from the repo, feel free to [connect on LinkedIn](https://www.linkedin.com/in/amarkhatri/)
 
----
+
 
 
 
