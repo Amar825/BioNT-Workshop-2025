@@ -9,7 +9,7 @@ This repository contains well-documented hands-on notebooks, my write-ups on cor
 
 ---
 
-## 📚 Table of Contents
+## Table of Contents
 
 - [Day 1 – Unsupervised Learning: PCA, Clustering](#day-1--unsupervised-learning-pca-clustering)
 - [Day 2 – Classification and Regression](#day-2--classification-and-regression)
@@ -73,7 +73,7 @@ Worked with:
 ## Assignment
 
 The complete assignment extension from Day 3's logistic regression notebook:
-- 📄 [`assignment_2panad.ipynb`](./assignment_2panad.ipynb)
+-  [`assignment_2panad.ipynb`](./assignment_2panad.ipynb)
 
 Includes:
 - Model comparison (LogReg, Random Forest, SVM, k-NN)
@@ -88,9 +88,13 @@ Includes:
 All workshop notebooks and datasets are inside the corresponding day folders. You can explore:
 
 - Clean and reproducible Jupyter notebooks
-- Hands-on pipelines for genomics data
 - Personal markdown notes breaking down complex theory
 
+Some other relevant links:
+- [Workshop Hands-on rendered page](https://naicno.github.io/BioNT_Module2_handson/#)
+- [Accelerated Genomics rendered page](https://coderefinery.github.io/BioNT_Lesson_Accelerated_Genomics/#)
+- [GPU and parallel processing rendered page](https://training.pages.sigma2.no/tutorials/gpu-intro/index.html)
+- [Workshop interaction page where participants aksed the questions and instructors answerd](https://biont.biobyte.de/VPI_52LLQCmp_P4QYFhFXg?view)
 ---
 
 **Author:**  
