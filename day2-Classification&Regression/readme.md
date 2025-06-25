@@ -18,10 +18,12 @@
     - [Overfitting and Regularization](#overfitting-and-regularization)
 - [Hands-on Session (Milan De Cauwer and Pubudu)](#hands-on-session-milan-de-cauwer-and-pubudu)
 
+---
+
 ### Theory sessions (Milan De Cauwer)
-### **1. Key Ideas and Problems Discussed/ Classification**
+### **1. Key Ideas and Problems Discussed – Classification**
 The materials used by the instructors are in the repo folder itself. In this section, I am going to list out some important concepts that were introduced and we will take a slight deeper dive in some topics i find challenging and write my own understanding of it.
-#### When do linear classifiers work well?
+#### When Do Linear Classifiers Work Well
 Linear classifiers, like logistic regression or linear SVM, work well when the classes can be separated by a straight line (or a hyperplane in more than two dimensions). If the data has a mostly linear pattern and you do not need to capture complex interactions between features, a linear model can be both effective and interpretable. The best part is, they are fast, require less data to train, and are easier to understand.
 
 
