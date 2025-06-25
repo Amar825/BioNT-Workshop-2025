@@ -21,17 +21,17 @@ This repository contains well-documented hands-on notebooks, my write-ups on cor
 
 ---
 
-## Day 1 – [Unsupervised Learning: PCA, Clustering](./day1/README.md)
+## Day 1 – [Unsupervised Learning: PCA, Clustering](./day1-Unsupervised-Learning/readme.md)
 
 Learned how to handle high-dimensional biological data using:
 - PCA for dimensionality reduction
 - k-means and hierarchical clustering
 - Distance metrics and similarity
-- t-SNE, UMAP, Autoencoders
+- t-SNE, Autoencoders
 
 ---
 
-## Day 2 – [Classification and Regression](./day2/README.md)
+## Day 2 – [Classification and Regression](./day2-Classification&Regression/readme.md)
 
 Explored:
 - Logistic regression, Decision Trees, Random Forests
@@ -41,7 +41,7 @@ Explored:
 
 ---
 
-## Day 3 – [Model Validation and Optimisation](./day3/README.md)
+## Day 3 – [Model Validation and Optimisation](./day3-ModelValidation&Optimisation/readme.md)
 
 Covered:
 - Overfitting and bias-variance tradeoff
@@ -51,7 +51,7 @@ Covered:
 
 ---
 
-## Day 4 – [Deep Learning and DeepVariant](./day4/README.md)
+## Day 4 – [Deep Learning and DeepVariant](./day4-Deeplearning&DeepVariant/readme.md)
 
 Covered fundamentals of neural networks:
 - Shallow and deep networks
@@ -61,7 +61,7 @@ Covered fundamentals of neural networks:
 
 ---
 
-## Day 5 – [Accelerated Genomics with Parabricks](./day5/README.md)
+## Day 5 – [Accelerated Genomics with Parabricks](./day5-Acclerated genomics-Parabricks/readme.md)
 
 Worked with:
 - Containers and NVIDIA GPUs
